@@ -61,15 +61,33 @@ html {
 }
 
 .nav-logo {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--primary-color);
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .nav-logo:hover {
+    transform: scale(1.05);
+}
+
+.logo-circle {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2.5px solid var(--primary-color);
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.nav-logo:hover .logo-circle {
+    border-color: var(--secondary-color);
     color: var(--secondary-color);
+    transform: rotate(5deg);
 }
 
 .nav-menu {
